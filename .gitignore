@@ -27,7 +27,6 @@ yarn-error.log
 
 # Arquivos de configuração do IDE
 .idea/
-.vscode/
 *.sublime-*
 *.suo
 *.user
