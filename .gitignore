@@ -1,0 +1,49 @@
+# Arquivos e pastas específicos para o ambiente do Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Arquivos temporários e caches
+*.log
+*.lock
+*.swp
+.DS_Store
+
+# Cache de pacotes npm
+.pnpm-store/
+.pnpm/.lock
+.pnpm-lock.yaml
+
+# Arquivos gerados automaticamente
+/dist/
+/build/
+
+# Arquivos de configuração local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Arquivos de configuração do IDE
+.idea/
+.vscode/
+*.sublime-*
+*.suo
+*.user
+*.sln.docstates
+
+# Cache do Jest
+/.jest/
+
+# Arquivos de configuração
+*.config.js
+
+# Cache do ESLint
+.eslintcache
+
+# Arquivos de build do webpack
+/build/
+
+#Arquivos temp
+*.txt
