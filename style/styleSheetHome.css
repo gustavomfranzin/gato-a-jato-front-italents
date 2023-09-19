@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin-top: 16px;
+  gap: 16px;
+  width: 80%
+}
+
+section {
+  flex: 1; 
+  background-color: #FEFEFE; 
+  padding: 20px;
+}
+@media screen and (max-width: 540px) {
+
+  section{
+    padding: 0;
+  }
+  
+}
+
+aside {
+  display: flex;
+  flex-direction: column; 
+  flex: 1; 
+  gap: 16px;
+}
+
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-section{
+  background-color: var(--background-color-form);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+}
+
+

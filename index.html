@@ -3,32 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gato a jato!</title>
+    <link rel="stylesheet" href="./style/styleSheetLogin.css" />
+    <link rel="stylesheet" href="./style/styleSheetPattern.css" />
   </head>
+
   <body>
-    <header>
-      <img src="#" alt="logo da empresa" />
-      <!-- 
-      método GET utilizado apenas para navegar no protótipo, ao integrar a api necessário
-      alterar para o método POST pois é o método correto para envio de informações sensíveis ou cadastro de informações
-      -->
+    <header id="header-login">
+      <img src="./files/logo.png" alt="Company logo" />
+      <!-- Use POST method for secure login -->
       <form action="home.html" method="GET">
-        <div>
-          <label for="user">Email/Usuário</label>
-          <input id="user" type="text" />
-          <label for="passowrd">Senha</label>
-          <input type="password" id="passowrd" />
-          <button type="submit">login</button>
+        <div id="form-login">
+          <label for="user-login">Email/Usuário:</label>
+          <input id="user-login" type="text" required />
+          <label for="password-login">Senha:</label>
+          <input type="password" id="password-login" required />
+          <button type="submit">Login</button>
         </div>
+        <a href="#">Esqueceu seus dados?</a>
       </form>
     </header>
     <main>
       <section>
         <h1>Crie sua conta!</h1>
-        <!-- 
-      método GET utilizado apenas para navegar no protótipo, ao integrar a api necessário
-      alterar para o método POST pois é o método correto para envio de informações sensíveis ou cadastro de informações
-      -->
+        <!-- Use POST method for secure registration -->
         <form action="home.html" method="GET">
           <div>
             <label for="fullname">Nome completo:</label>
@@ -36,44 +33,55 @@
               id="fullname"
               type="text"
               placeholder="Digite seu nome completo"
+              required
             />
 
-            <label for="user">Usuário:</label>
+            <label for="user-register">Usuário:</label>
             <input
-              id="user"
+              id="user-register"
               type="text"
-              placeholder="Escolha um nome de usuário"
+              placeholder="Digite seu usuário"
+              required
             />
 
-            <label for="password">Senha:</label>
+            <label for="password-register">Senha:</label>
             <input
-              id="password"
+              id="password-register"
               type="password"
               placeholder="Digite sua senha"
+              oninput="validatePassword(this)"
+              required
             />
-
-            <label for="email">E-mail:</label>
-            <input id="email" type="text" placeholder="seuemail@provedor.com" />
-
-            <label for="birth">Data de aniversário:</label>
+            <div id="password-strength-meter">
+              Força da Senha: <span id="password-strength">Fraca</span>
+            </div>
+            <label for="email-register">E-mail:</label>
             <input
-              id="birth"
-              type="date"
-              placeholder="Escolha sua data de aniversário"
+              id="email-register"
+              type="email"
+              placeholder="seuemail@exemplo.com.br"
+              required
             />
+
+            <label for="birth-register">Data de aniversário:</label>
+            <input id="birth-register" type="date" required />
 
             <label for="tel">Telefone:</label>
             <input
               id="tel"
               type="tel"
-              placeholder="Digite seu número de telefone"
+              placeholder="Digite seu telefone"
+              oninput="formatPhoneNumber(this)"
+              onblur="validatePhoneNumber(this)"
+              required
             />
 
-            <label for="company">Empresa:</label>
+            <label for="company-register">Empresa:</label>
             <input
-              id="company"
+              id="company-register"
               type="text"
-              placeholder="Digite o nome da sua empresa"
+              placeholder="Digite o nome da empresa"
+              required
             />
 
             <button type="submit">Criar conta</button>
@@ -82,9 +90,10 @@
       </section>
     </main>
     <footer>
-      <a href="#">Política de privacidade</a>
-      <a href="#">Termos de Uso</a>
+      <a href="#">Politica de Privacidade </a>
+      <a href="#"> Termos de uso </a>
       <a href="#">Trabalhe conosco</a>
     </footer>
+    <script src="./scripts/inputsValidation.js"></script>
   </body>
 </html>

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.form-car {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  background-color: var(--background-color-form);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-container {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"],
+select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-bottom: 16px; 
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+@media screen and (max-width: 540px) {
+  .form-car {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .input-container {
+    flex-direction: column; 
+  }
+
+  label {
+    width: 100%; 
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  select {
+    width: 100%; 
+  }
+}
+
+
+
+.table-car {
+  margin: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f0f0f0;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #e0e0e0;
+}
+
+
+

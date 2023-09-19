@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+#header-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: var(--primary-color);
+  color: white;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 540px) {
+  #header-login {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 20vh;
+}
+}
+
+#header-login a {
+  color: white;
+  font-weight: 400;
+  font-style: italic;
+  text-decoration: none;
+}
+
+#header-login a:hover {
+  color: red;
+  font-weight: 400;
+  font-style: italic;
+  text-decoration: none;
+}
+
+#header-login img {
+  width: 8vw;
+  height: 8vh;
+  margin-left: 30px;
+}
+
+#form-login {
+  display: flex;
+  align-items: center;
+  display: flex;
+  margin-right: 30px;
+  gap: 6px;
+  font-size: 16px;
+  font-weight: 700;
+}
+@media screen and (max-width: 540px) {
+  #form-login {
+    margin: auto;
+    width: 90%;
+}
+}
+
+#form-login input {
+  padding: 3px;
+  width: 100%;
+  height: 2vh;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+#form-login button {
+  padding: 6px;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: var(--button-color);
+}
+
+#form-login button:hover {
+  padding: 6px;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: var(--button-hover-color);
+}
+
+section {
+  padding: 16px;
+  background-color: var(--background-color-form);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+section h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input {
+  width: 95%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+#password-strength-meter {
+  margin-top: 10px;
+  margin: auto;
+  width: 40%;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+#password-strength {
+  font-weight: bold;
+}
+
+@media (max-width: 540px) {
+
+  section {
+    max-width: 100%;
+    padding: 10px;
+  }
+}

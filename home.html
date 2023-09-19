@@ -7,29 +7,44 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="./style/styleSheetPattern.css" />
+    <link rel="stylesheet" href="./style/styleSheetHome.css" />
     <title>gato a jato!</title>
   </head>
   <body>
-    <header>
-      <img src="#" alt="logo da empresa" />
-      <nav>
-        <a href="home.html">Início</a>
+    <header class="header-main">
+      <img class="img-logo" src="./files/logo.png" alt="logo da empresa" />
+      <nav class="main-menu">
+        <a href="home.html">Home</a>
         <a href="carRegistration.html">Cadastro de veículos</a>
       </nav>
       <div>
-        <img src="#" alt="foto de perfil" />
-        <a href="#"><i class="bi bi-list"></i></a>
+        <a href="#" id="open-modal"
+          ><img
+            class="img-profile"
+            src="./files/711769.png"
+            alt="foto de perfil"
+        /></a>
+      </div>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <a href="#" id="dados-link">Dados Cadastrais</a>
+          <a href="#" id="acesso-link">Controle de Acesso</a>
+          <a href="#" id="sair-link">Sair da Conta</a>
+          <a href="#" id="cancel-link">Cancelar</a>
+        </div>
       </div>
     </header>
     <main>
-      <section>
+      <section class="card-section">
         <h3>SEÇÃO DE NOVIDADES E NOTICIAS AUTOMOBILISTICAS</h3>
       </section>
       <aside>
-        <section>
+        <section class="card-section">
           <h3>TOP 3 CLIENTES ÚLTIMOS 30 DIAS</h3>
         </section>
-        <section>
+        <section class="card-section">
           <h3>FATURAMENTO ÚLTIMOS 30 DIAS</h3>
         </section>
       </aside>
@@ -39,5 +54,6 @@
       <a href="#">Termos de Uso</a>
       <a href="#">Trabalhe conosco</a>
     </footer>
+    <script src="./scripts/scriptActions.js"></script>
   </body>
 </html>
